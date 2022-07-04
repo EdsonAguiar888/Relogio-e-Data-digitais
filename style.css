@@ -1,32 +1,74 @@
 
 
+@media screen and (max-width: 768px ) {
+    .box .inputHora {
+    font-size: 60px;        
+        
+    }
+}
 
+@media screen and (max-width: 768px ) {
+    .box .inputData {
+    font-size: 40px;        
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main .container{
+        height: 260px;
+        width: 260px;
+        
+    }
+}
 
 
 *{
     margin: 0;
     padding: 0;
     outline: none;
-    width: 100v
-    
-    
+    overflow: hidden;
+        
 }
 
-.main {
-    height: 100vh;
-    
+.body  {
+    height: 100vh;    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: black;
-    background-image: url(img/img2.jpg);
-    background-repeat: no-repeat;
-    
+    background-image: url(img/recdia.jpg);
+    background-repeat: no-repeat;    
     background-position: center center;
-
     
+}
 
+ .main  {
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-image: url(img/recdia.jpg);
+    background-repeat: no-repeat;    
+    background-position: center center;
+    
+}
+
+
+ .main2 {
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background-image: url(img/marcozeronoite.jpg);
+    background-repeat: no-repeat;    
+    background-position: center center;
+    z-index: 5;
 }
 
 
@@ -36,29 +78,64 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-
     background-color: rgba(0, 0, 0, 0.4);
-    height: 230px;
-    width: 550px;
+    height: 300px;
+    width: 600px;   
+    backdrop-filter: blur(1.5px);
 
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;   
+    
 }
 
 .inputHora {
     margin: 10px;
-    height: 80px;
+    height: 100px;
     width: 400px;
     font-size: 100px;
-    color: black;
-   
-    
+    color: white;   
+    align-items: center;
+    text-align: center;
+    background-color: transparent;    
+    border: none;    
     
 }
 
-.inputData {
+ .inputData {
     margin: 10px;
-    height: 80px;
-    width: 500px;
-    font-size: 100px;
-    
+    height: 60px;
+    width: 400px;
+    font-size: 60px;   
+    color: white;
+    align-items: center;
+    text-align: center;
+    background: transparent;  
+    border: none;
+}
+
+#btn{
+    width: 70px;
+    height: 40px;
+    top: 25px;
+    left: 1180px;
+    font-size: large;
+    position: absolute;
+    color: black;
+}
+
+#btn2{
+    width: 70px;
+    height: 40px;
+    top: 75px;
+    left: 1180px;
+    font-size: large;
+   
+    position: absolute;
+    color: black;
 }

@@ -42,6 +42,52 @@
 
  var timer = setInterval(relogio, 1000);
 
+    //hor = 19;
+
+
+ 
+
+ 
+     
+
+     //if(hor >= 5 && hor < 18){
+       //  troca.ClassList.toggle("main2");
+    // }
+     //else{
+         
+    // }
+
+  
+
+
+
+    let btn = document.querySelector("#btn");
+    let btn2 = document.querySelector("#btn2")
+
+    let main = document.querySelector("body");
+   // let classe = doument.getElementById("classe");
+
+
+ 
+    btn.addEventListener("click", function(){
+       
+        main.className = ("main2");
+        //classe.classList.remove("main");
+        
+        
+        
+    })
+
+    btn2.addEventListener("click", function(){
+        main.className = ("main");
+        
+        
+    } )
+
+   // btn2.addEventListener("click", function(){
+   //     classe.classList.remove("main");
+   // } )
+
 
 
 
