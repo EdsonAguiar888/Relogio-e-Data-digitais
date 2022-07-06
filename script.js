@@ -1,12 +1,11 @@
 
+   //Função do relogio
 
-
- function relogio (){
+   function relogio (){
      var clock = new Date();
      var hor = clock.getHours();
      var min = clock.getMinutes();
      var seg = clock.getSeconds();
-
 
      var dat = clock.getDate();
      var mes = clock.getMonth() + 1;
@@ -35,58 +34,59 @@
      document.getElementById("dat").value=hoje;
 
      document.getElementById("rel").value=horas;
+   }
 
+   var timer = setInterval(relogio, 1000);
 
- }
-
-
- var timer = setInterval(relogio, 1000);
-
-    //hor = 19;
-
-
- 
-
- 
-     
-
-     //if(hor >= 5 && hor < 18){
-       //  troca.ClassList.toggle("main2");
-    // }
-     //else{
-         
-    // }
-
-  
-
-
+//==================================================================
+   //Variaveis
 
     let btn = document.querySelector("#btn");
-    let btn2 = document.querySelector("#btn2")
+    let btn2 = document.querySelector("#btn2")  
 
-    let main = document.querySelector("body");
-   // let classe = doument.getElementById("classe");
+    const main = document.querySelector("body"); 
+    const excluir = document.getElementById("deleteMain"); 
+    const acrecentar = document.querySelector("body");
+    const acrecentarHora = document.getElementById("rel");
+    const acrecentarData = document.getElementById("dat");
 
 
- 
-    btn.addEventListener("click", function(){
-       
-        main.className = ("main2");
-        //classe.classList.remove("main");
-        
-        
-        
-    })
+//================================================================    
+   /*Funções de troca de imagens e fonte*/
 
-    btn2.addEventListener("click", function(){
-        main.className = ("main");
-        
-        
-    } )
+    function acrecentarClass(){
+      acrecentar.classList.toggle("main2");   // acrecenta a class main2 no body ao mesmo tempo que exclui a class main usando a funçao ##function excluirClass()##.
+    }
 
-   // btn2.addEventListener("click", function(){
-   //     classe.classList.remove("main");
-   // } )
+    function excluirClass(){
+      excluir.classList.toggle("main"); // exclui a class main para que a class main2 do body funcione.
+     }
+   //==============================================
+
+   function acrecentarHora1(){
+      acrecentarHora.classList.toggle("inputHora1");
+   }
+
+   function acrecentarData1(){
+      acrecentarData.classList.toggle("inputData1")
+   }
+//=================================================================  
+   //Eventos de click dos botões
+
+   btn.addEventListener("click" ,  function(){
+     
+      acrecentarClass();
+      excluirClass();        
+   })
+
+   btn2.addEventListener("click", function(){
+      acrecentarHora1();
+      acrecentarData1();
+   })
+
+
+   
+
 
 
 
